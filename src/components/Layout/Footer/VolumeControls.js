@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { MdOutlineLyrics, MdOutlineDevicesOther } from "react-icons/md";
 import { HiOutlineQueueList } from "react-icons/hi2";
 import {
@@ -6,7 +6,6 @@ import {
   ImVolumeMedium,
   ImVolumeLow,
   ImVolumeMute2,
-  ImVolumeMute,
 } from "react-icons/im";
 
 const VolumeControls = ({ volume, setVolume, isMute, setIsMute }) => {

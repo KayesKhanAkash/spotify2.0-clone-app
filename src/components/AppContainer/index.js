@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { getTokenFromUrl } from "../../spotify/spotify";
 import Login from "../Pages/loginSignUp/Login";
 import Player from "../Pages/Player";
@@ -14,8 +14,6 @@ import {
   getCategories,
   getCategoryPlaylists,
 } from "../../Redux/Slice/DataLayerSlice";
-import { getAccessToken } from "./getAccesToken";
-import { redirectToAuthCodeFlow } from "./redirectAuthCodeFlow";
 
 const spotify = new SpotifyWebApi();
 

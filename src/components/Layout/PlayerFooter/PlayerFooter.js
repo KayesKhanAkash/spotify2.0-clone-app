@@ -1,11 +1,6 @@
 import React from "react";
-import {
-  AiOutlineFacebook,
-  AiOutlineInstagram,
-  AiOutlineTwitter,
-} from "react-icons/ai";
+import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 import { SiFacebook } from "react-icons/si";
-import { Link } from "react-router-dom";
 
 const PlayerFooter = () => {
   const company = [

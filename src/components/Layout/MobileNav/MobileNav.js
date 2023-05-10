@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillHome, AiOutlineSearch } from "react-icons/ai";
 import { BsSpotify } from "react-icons/bs";
 import { VscLibrary } from "react-icons/vsc";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Links = [
   {

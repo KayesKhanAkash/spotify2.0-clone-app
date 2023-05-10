@@ -1,5 +1,4 @@
 import React from "react";
-import { styles } from "../../../Utils/commonStyles";
 
 const LoadingForNav = () => {
   return (

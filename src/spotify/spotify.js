@@ -3,12 +3,9 @@
 
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
-// const redirectUrl = "http://192.168.31.198:3000/";
-// const redirectUrl = "http://192.168.0.107:3000/";
-const redirectUrl = "http://localhost:3000/";
+const redirectUrl = "https://spotify-clone-app2-0.netlify.app/";
 
-const clientId = "b22c063245c6443683da2f7c491ceb76"; // for kayeskhanakash@gmail.com
-// const clientId = "5a885fa7670749e28b764e26016c3539"; //for heartlesskhan@gmail.com
+const clientId = process.env.REACT_APP_CLIENT_ID;
 
 const scopes = [
   "user-read-currently-playing",

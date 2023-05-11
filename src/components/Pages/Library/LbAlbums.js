@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 // import SpotifyWebApi from "spotify-web-api-js";
-import MusicCart from "../Home/MusicCart";
-import { styles } from "../../../Utils/commonStyles";
+// import MusicCart from "../Home/MusicCart";
+// import { styles } from "../../../Utils/commonStyles";
 
 const LbAlbums = () => {
   // const spotify = new SpotifyWebApi();

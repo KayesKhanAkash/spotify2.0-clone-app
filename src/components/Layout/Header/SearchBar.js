@@ -2,10 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import { useDispatch } from "react-redux";
 import SpotifyWebApi from "spotify-web-api-js";
-import {
-  getSearchQuery,
-  getSearchedItems,
-} from "../../../Redux/Slice/DataLayerSlice";
+import { getSearchedItems } from "../../../Redux/Slice/DataLayerSlice";
 import { useNavigate } from "react-router-dom";
 
 const SearchBar = () => {
@@ -23,14 +20,12 @@ const SearchBar = () => {
         .then((res) => {
           if (cancel) return;
           dispatch(getSearchedItems(res));
-          console.log(cancel);
         })
         .catch((err) => {
           console.log(err);
         });
     }
 
-    dispatch(getSearchQuery(search));
     navigate(`search/${search}`);
 
     return () => (cancel = true);
@@ -50,7 +45,6 @@ const SearchBar = () => {
         });
     }
 
-    dispatch(getSearchQuery(search));
     navigate(`search/${search}`);
   };
 

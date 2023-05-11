@@ -15,7 +15,6 @@ const DataLayerSlice = createSlice({
     categoryPlaylists: null,
     singlePlaylist: null,
     searchedItems: null,
-    searchQuery: "",
     isLoading: false,
     artist: null,
     artistAlbums: null,
@@ -63,9 +62,6 @@ const DataLayerSlice = createSlice({
     },
     getSearchedItems: (state, { payload }) => {
       state.searchedItems = payload;
-    },
-    getSearchQuery: (state, { payload }) => {
-      state.searchQuery = payload;
     },
     getArtist: (state, { payload }) => {
       state.artist = payload;
@@ -120,7 +116,6 @@ export const {
   getSinglePlayLists,
   setIsLoading,
   getSearchedItems,
-  getSearchQuery,
   getArtist,
   getArtistAlbums,
   getrelatedArtists,
